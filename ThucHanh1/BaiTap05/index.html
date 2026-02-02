@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai5</title>
+</head>
+<body style="font-family: sans-serif; margin: 0; background-color: #f0f0f0;">
+
+    <div style="background-color: #333; color: white; padding: 10px 20px; display: flex; justify-content: space-between;">
+        <div>
+            <b style="font-size: 20px;">HR Management</b> &nbsp;&nbsp;
+            <a href="#" style="color: white; text-decoration: none;">Home</a> &nbsp;
+            <a href="#" style="color: white; text-decoration: none;">Contact</a>
+        </div>
+        <div>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div style="padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Employee</h2>
+            <button onclick="moPopup()" style="background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">
+                + Add
+            </button>
+        </div>
+
+        <table border="1" style="width: 100%; border-collapse: collapse; background-color: white;">
+            <tr style="background-color: #eee;">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fatima Beatriz</td>
+                <td>Fatima Beatriz@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td>
+                    <button style="background: orange;">Edit</button>
+                    <button style="background: red; color: white;">Delete</button>
+                </td>
+            </tr>
+            </table>
+    </div>
+
+    <div id="man-hinh-mo" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9;"></div>
+
+    <div id="popup-add" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 1px solid #ccc; width: 500px; z-index: 10; border-radius: 5px;">
+        
+        <div style="background-color: #007bff; color: white; padding: 10px; font-weight: bold;">
+            New Employee
+        </div>
+
+        <div style="padding: 20px;">
+            <table style="width: 100%;" border="0">
+                <tr>
+                    <td>Name<br><input type="text" style="width: 90%;"></td>
+                    <td>Email<br><input type="text" style="width: 90%;"></td>
+                </tr>
+                <tr>
+                    <td>Phone<br><input type="text" style="width: 90%;"></td>
+                    <td>Position<br>
+                        <select style="width: 90%;">
+                            <option>Staff</option>
+                            <option>Manager</option>
+                            <option>CEO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Sex<br>
+                        <input type="radio" name="s"> Male 
+                        <input type="radio" name="s"> Female
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="background-color: #f9f9f9; padding: 10px; text-align: right;">
+            <button onclick="dongPopup()" style="background: green; color: white; padding: 5px 15px;">Save</button>
+            <button onclick="dongPopup()" style="padding: 5px 15px;">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        function moPopup() {
+            document.getElementById('popup-add').style.display = 'block';
+            document.getElementById('man-hinh-mo').style.display = 'block';
+        }
+        function dongPopup() {
+            document.getElementById('popup-add').style.display = 'none';
+            document.getElementById('man-hinh-mo').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
