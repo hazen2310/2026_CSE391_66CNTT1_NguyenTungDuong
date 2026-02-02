@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; line-height: 1.5; color: #333; }
+        .form-container { width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 15px; }
+        
+        .section-title { border-bottom: 1px solid #999; font-weight: bold; margin: 20px 0 10px 0; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 5px 0; vertical-align: top; }
+        .label-cell { width: 150px; font-weight: bold; font-size: 14px; }
+        
+        input[type="text"], select, textarea { width: 95%; padding: 4px; }
+        
+        .button-bar { background: #eee; padding: 10px; text-align: right; margin-top: 20px; }
+        button { cursor: pointer; padding: 5px 15px; }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h3>Basic Info</h3>
+        <div class="row">
+            <div class="label">Employee ID</div>
+            <div class="input-field">9</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Last Name</div>
+            <div class="input-field">Dodsworth</div>
+        </div>
+
+        <div class="row">
+            <div class="label">First Name</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Gender</div>
+            <div class="input-field radio-group">
+                <label class="radio-item"><input type="radio" name="gender"> Male</label>
+                <label class="radio-item"><input type="radio" name="gender"> Female</label>
+                <label class="radio-item"><input type="radio" name="gender"> XXX</label>
+                <label class="radio-item"><input type="radio" name="gender"> ZZZ</label>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="label">Tittle</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Suffix</div>
+            <div class="input-field"><input type="text"placeholder="Mr./Ms."></div>
+        </div>
+
+        <div class="row">
+            <div class="label">BirthDate</div>
+            <div class="input-field"><input type="datetime"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">HireDate</div>
+            <div class="input-field"><input type="datetime"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">SSN# (if applicable)</div>
+            <div class="input-field"><input type="number"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Reports To</div>
+            <div class="input-field">
+                <select>
+                    <option>xxxxxx</option>
+                    <option>xxxxxx</option>
+                </select>
+            </div>
+        </div>
+
+        <h3>Contact Info</h3>
+        <div class="row">
+            <div class="label">Email</div>
+            <div class="input-field"><input type="email" placeholder="name@example.com"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Adress</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">City</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Region</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Postal Code</div>
+            <div class="input-field"><input type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Country</div>
+            <div class="input-field">
+                <select>
+                    <option>blabla</option>
+                    <option>VietNam</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Home Phone</div>
+            <div class="input-field"><input type="tel"></div>
+        </div>
+
+        <div class="row">
+            <div class="label">Photo</div>
+            <div class="input-field"><input type="url"></div>
+        </div>
+
+        <h3>Optional Info</h3>
+        <div class="row" style="align-items: flex-start;">
+            <div class="label">Notes</div>
+            <div class="input-field">
+                <textarea rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Preferred Shift</div>
+            <div class="input-field checkbox-group">
+                <label class="checkbox-item"><input type="checkbox"> Regular</label>
+                <label class="checkbox-item"><input type="checkbox"> xxxxx</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Active?</div>
+            <div class="input-field"><input type="checkbox"></div>
+        </div>
+
+        <div class="row" style="align-items: flex-start;">
+            <div class="label">Are you human?</div>
+            <div class="input-field">
+                <div class="captcha">T I D A W O</div>
+                <input type="text" placeholder="Enter captcha">
+            </div>
+        </div>
+
+        <div class="footer-buttons">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="button" class="btn btn-cancel">Cancel</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
