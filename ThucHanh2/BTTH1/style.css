@@ -1,0 +1,38 @@
+/*todo1*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* thường thêm để dễ kiểm soát kích thước */
+}
+/*todo2*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+/*todo3*/
+#main-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/*todo4*/
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/*todo5*/
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+}
+/*todo6*/
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+}
+/*todo7*/
+a:hover {
+    color: #ff6600;
+    background-color: #eee;
+}
